@@ -24,8 +24,9 @@ function multiply_3($one, $two, $three)
 }
 
 $multi = new Multiplier;
-echo $multi->multiply(5, 6)."\n";
-echo $multi->multiply(5, 6, 3)."\n";
+echo "Ecco il risultato con due variabili ".$multi->multiply(5, 6).'<br>';
+//di seguito faccio l'overload
+echo "Ecco il risultato con overload a tre variabili ".$multi->multiply(5, 6, 3)."\n";
 
 
 ?>
